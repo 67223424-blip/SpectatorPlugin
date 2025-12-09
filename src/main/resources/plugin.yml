@@ -1,0 +1,26 @@
+name: SpectatorPlugin
+version: 1.0.0
+main: com.spectator.plugin.SpectatorPlugin
+api-version: 1.21
+author: CustomPlugin
+description: Advanced spectator plugin with free camera movement and multi-world support
+
+commands:
+  spectate:
+    description: คำสั่งสำหรับติดตามผู้เล่น
+    usage: |
+      /spectate <player> - ติดตามผู้เล่นที่ระบุ
+      /spectate random - สุ่มติดตามผู้เล่น
+      /spectate auto <minutes> - เปิดโหมดสุ่มอัตโนมัติ
+      /spectate stop - หยุดติดตาม
+      /spectate list - แสดงรายชื่อผู้เล่น
+    permission: spectator.use
+    aliases: [spec, watch]
+
+permissions:
+  spectator.use:
+    description: อนุญาตให้ใช้คำสั่ง spectate
+    default: op
+  spectator.admin:
+    description: สิทธิ์ admin สำหรับจัดการ spectator
+    default: op
