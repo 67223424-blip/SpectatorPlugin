@@ -28,7 +28,7 @@ jobs:
       with:
         name: SpectatorPlugin
         path: target/*.jar
-```
+
 
 **อัพเดท Actions เป็นเวอร์ชั่นล่าสุด** (v4)
 
