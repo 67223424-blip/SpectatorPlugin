@@ -28,28 +28,3 @@ jobs:
       with:
         name: SpectatorPlugin
         path: target/*.jar
-
-
-**อัพเดท Actions เป็นเวอร์ชั่นล่าสุด** (v4)
-
----
-
-### วิธีที่ 4: ตรวจสอบไฟล์ทั้งหมด
-
-ในหน้า Repository ของคุณ ต้องมีโครงสร้างแบบนี้:
-```
-SpectatorPlugin/
-├── .github/
-│   └── workflows/
-│       └── build.yml ✅
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── com/
-│       │       └── spectator/
-│       │           └── plugin/
-│       │               └── SpectatorPlugin.java ✅
-│       └── resources/
-│           └── plugin.yml ✅
-├── pom.xml ✅
-└── README.md
